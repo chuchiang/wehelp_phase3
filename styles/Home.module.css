@@ -1,0 +1,130 @@
+.wrap{
+    margin: 0auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+}
+.header{
+    font-size: 20px;
+    color: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(34,51,67);
+}
+.content{
+    font-size: 20px;
+    color:  rgb(151,149,150);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(204,221,234);
+
+}
+.btn{
+    font-size: 16px;   
+}
+.ml_10{
+    margin-left: 10px;
+}
+.ml_35{
+    margin-left: 35px;
+}
+.mt_10{
+    margin-top: 10px;
+}
+.mb_20{
+    margin-bottom: 20px;
+}
+
+.input{
+    outline:none;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+.select{
+    font-size: 16px;
+    height: 32px; 
+}
+
+.invalid_feedback{
+    color:red;
+    font-size: 12px;
+    margin-top: 5px; /* 添加额外的上外边距 */
+}
+.is_invalid{
+    border: 1px solid red;
+}
+.form{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list_income{
+    width: 171px;
+    font-size: 16px;
+    font-weight: bold;
+    left: 0;
+    color:green;
+     padding: 5px;
+}
+.list_expenses{
+    width: 171px;
+    font-size: 16px;
+    left: 0;
+    color:brown;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.list_content{
+    width: 500px;
+    font-size: 16px;
+    left: 0;
+    font-weight: bold;
+    padding: 5px;
+}
+.list{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+.hr{
+    width: 800px;
+}
+#_next{
+    width: 1200px;
+    margin: 0 auto;
+}
+.total{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.box{
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+@media (max-width:1200px) {
+    .form, .hr,.list_income,.list_content,.list_expenses,.btn{
+        max-width:100% ;
+    }
+    .listbox,.list{
+        max-width:100% ;
+    }
+}
