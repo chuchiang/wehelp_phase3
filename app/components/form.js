@@ -1,27 +1,27 @@
-import styles from '../styles/Home.module.css';
+
 
 export const Input = ({ register, errors, id, type, rules,placeholder }) => {
-    return (<div className={styles.box}>
+    return (<div className='h-18'>
         <input
             id={id}
             type={type}
             {...register(id, rules)}
-            className={`${styles.input} ${errors[id] && styles.is_invalid}`}
+            className='bg-slate-100 '
             placeholder={placeholder}
         />
         {errors[id] && (
-            <div className={styles.invalid_feedback}>{errors?.[id]?.message}</div>
+            <div className='text-orange-700'>{errors?.[id]?.message}</div>
         )}
     </div>)
 }
 
 export const Select = ({ id, register, children }) => {
     return (
-        <div className={styles.box}>
+        <div className="top-5">
             <select
                 name="accounting"
                 id={id}
-                className={styles.select}
+                className="px-2 py-1 bg-slate-100 rounded h-8"
                 {...register(id)}
             >
                 {children} {/* 將選項放在這裡 */}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+ 
+  button {
+    @apply bg-slate-300 cursor-pointer rounded px-2 ; 
+  }
+
+  input {
+    @apply px-2 py-1 bg-white rounded;
+
+  }
+
+ 
+
+} 
+
+@layer utilities{
+  .w-800 {
+    width: 800px;
+  }
+  .w-1200 {
+    width: 1200px;
+  }
+  .w-370 {
+    width: 410px;
+  }
+}
+
+
