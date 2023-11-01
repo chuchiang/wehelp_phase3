@@ -1,6 +1,5 @@
 'use client'
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';//換頁
 import { Login } from './login.js'
 import { SignUpForm } from './register.js'
 import { Signout } from './signout.js'
@@ -12,10 +11,7 @@ function Header({ title }) {
 
 export default function HomePage() {
 
-  const router = useRouter();
-  function handleClick() {
-    router.push('/accounting');
-  }
+
 
   const [showRegister, setShowRegister] = useState(false); // 新增一個狀態用來控制是否顯示 Register
   const [showLogin, setShowLogin] = useState(true); // 新增一個狀態用來控制是否顯示 Login
